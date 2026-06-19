@@ -1,11 +1,13 @@
 # Hi, I'm Rupsa 👋
 
-I'm a data analyst based in Bengaluru with a Master's in Applied Mathematics.
-I build end-to-end analytics projects — from a raw business question to a
-recommendation someone can actually act on.
+**Data analyst in Bengaluru.** I turn raw business questions into recommendations
+someone can act on — not just dashboards that look nice.
 
-Every project here follows the same discipline: understand the problem first,
-then query, clean, analyse, visualise, and tell the story clearly.
+Master's in Applied Mathematics. Every project below follows the same discipline:
+understand the problem first, then query, clean, analyse, visualise, and tell the
+story clearly.
+
+📧 rupsachaudhuri9@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/rupsa-chaudhuri/)
 
 ---
 
@@ -20,140 +22,88 @@ then query, clean, analyse, visualise, and tell the story clearly.
 
 ---
 
-## 📂 Main Portfolio
+## 📂 Featured Projects
+
+### 👥 HR Attrition Analysis — From a 34% Crisis to a Retention ROI Tool
+`Python` `SQL (DuckDB)` `Power BI` `Cost Modelling`
+
+A company was losing **1 in 3 employees a year** — more than double the healthy
+benchmark. I traced it to root causes, costed it, and turned it into an interactive
+tool a leadership team could actually use.
+
+- **$762,620/year in attrition cost — and 93.5% of it never appears in the HR budget** (invisible vacancy loss, not recruiting spend)
+- Underpaying doesn't save money: two technicians paid $0.42/hr below band cost **17x more to replace than to fix** ($874/yr vs ~$14,800 each)
+- Built a **live What-If ROI calculator** — the recommended scenario retains 9 of 47 at-risk staff for a 59% ROI (up to 199% at the optimistic end)
+- During QA I caught a date-parsing bug that had silently corrupted a third of the age data and inverted a key finding — caught, fixed, documented
+
+→ 4 linked datasets · replacement-cost engine · flight-risk scoring · 4-page interactive dashboard
+
+🔗 **[View Project](https://github.com/rupsa723/hr-attrition-analysis)**
+
+---
+
+### 🛒 RFM Customer Segmentation — Who's Worth Keeping?
+`Python` `pandas` `Power BI` `Retail CRM`
+
+A grocery chain had 2.5M transactions and zero customer intelligence — everyone got
+the same coupons. I built an end-to-end RFM pipeline on Dunnhumby's Complete Journey
+data to find out who's worth keeping and who's already gone.
+
+- **Champions are 20.4% of customers but drive 45.4% of revenue** — and the business had no record of who they were
+- Frequency, not basket size, is the real driver: Champions spend *less* per trip ($29.22 vs $36.56) but made 246 trips
+- **42.6% of households show churn signals**, and Champions absorb 60% of coupon spend despite buying without any incentive
+
+→ 2.5M transactions · 8 segments · demographic + campaign overlay · 4-page dashboard
+
+🔗 **[View Project](https://github.com/rupsa723/Dunnhumby-RFM-segmentation)**
+
+---
+
+### 📊 GA4 Funnel Analysis — Where Is the Funnel Leaking?
+`BigQuery` `SQL` `Python` `Power BI` `Marketing Analytics`
+
+Three months of real GA4 event data from the Google Merchandise Store. The question:
+which channels drive revenue, and where are we losing customers?
+
+- Overall CVR is **0.7%** — only 7 in 1,000 sessions convert
+- **Referral is the hidden gem** at $21.90 revenue per session — 14x better than Google Paid, which generated just $40 in total
+- Traffic grew 8x in three months, but revenue per session dropped 66% — more sessions ≠ more revenue
+- Returning users convert at 2x the rate of new users, yet are only 19% of traffic
+
+→ 10 BigQuery SQL files · Python prep pipeline · 3-page dashboard · 12-slide deck
+
+🔗 **[View Project](https://github.com/rupsa723/ga4-funnel-analysis)**
 
 ---
 
 ### 🚗 India EV Market Analysis — Which Segment Should You Enter?
 `MySQL` `Python` `Power BI` `Market Strategy`
 
-India sold 2 million EVs between FY2022–FY2024. The market grew 4x in two years.
-Yet 95 out of every 100 vehicles sold is still not electric — the window is wide open.
+India sold 2M EVs in FY2022–FY2024, a 4x jump — yet 95 of every 100 vehicles sold is
+still not electric. I used 3 Vahan Sewa government datasets to find where a new entrant
+should play.
 
-I analysed 3 government datasets from Vahan Sewa to answer one question:
-**which segment and which states should a new entrant prioritise?**
+- The case for **4-Wheelers is stronger than most assume**: 116% CAGR (vs 92% for 2W) and 62% of EV revenue on a fraction of the volume
+- **Karnataka beats Delhi on 2W penetration** (11.57% vs 9.40%) despite weaker subsidies — organic demand beats policy
+- Market is early enough that competition is still beatable
 
-The case for 4-Wheelers turns out to be stronger than most assume — 116% CAGR vs 92% for 2W,
-83% YoY growth in FY2024, and 62% of total EV revenue despite a fraction of the volume.
-The market is early enough that competition is still beatable.
+→ 10 SQL queries · 5 Python charts · 4-page dashboard · 2030 state-level projections
 
-On the state side, Karnataka outperforms Delhi on 2W penetration (11.57% vs 9.40%)
-despite Delhi running more aggressive government subsidies.
-Organic demand beats policy-driven adoption.
-
-4-page Power BI dashboard · 10 SQL queries · 5 Python charts · 2030 state-level projections
-
-🔗 **[View Project →](https://github.com/rupsa723/India_EV_Market_Analysis)**
+🔗 **[View Project](https://github.com/rupsa723/India_EV_Market_Analysis)**
 
 ---
 
-### 📊 GA4 Digital Marketing Funnel Analysis — Where Is the Funnel Leaking?
-`BigQuery` `SQL` `Python` `Power BI` `Marketing Analytics`
+## 📁 More Projects
 
-Analysed 3 months of real GA4 event data from the Google Merchandise Store
-(BigQuery public dataset) to answer: **which channels drive revenue,
-and at which stage are we losing customers?**
-
-The findings were more uncomfortable than expected:
-
-- Overall CVR is **0.7%** — only 7 in every 1,000 sessions result in a purchase
-- **Referral** is the hidden gem — $21.90 revenue per session, 14x better than Google Paid
-- **Google Paid generated just $40 in total revenue** across the full 3-month period
-- Traffic grew 8x from November to January, but revenue per session dropped 66% — growing sessions ≠ growing revenue
-- Returning users convert at **2x the rate** of new users, yet account for only 19% of all traffic
-
-10 BigQuery SQL files · Python data prep pipeline · 3-page Power BI dashboard · 12-slide presentation
-
-🔗 **[View Project →](https://github.com/rupsa723/ga4-funnel-analysis)**
+- **[Retail Sales Analysis](https://github.com/rupsa723/RetailSales-Analysis)** `Python` `Power BI` — behaviour, trends, campaign effectiveness, segmentation
+- **[Retail Analytics — Chip Category](https://github.com/rupsa723/Retail-Analytics)** `Python` `Jupyter` — buying habits surfaced from transaction data
+- **[Customer Churn Analysis](https://github.com/rupsa723/Customer-Churn-Analysis)** `Power BI` — churn patterns + retention strategy
+- **[Website Performance Analysis](https://github.com/rupsa723/Website-Analysis)** `Power BI` — gap analysis + improvement plan for e-commerce
+- **[ATM Transaction Analysis](https://github.com/rupsa723/ATM-Transaction-Analysis)** `Power BI` — usage patterns + service opportunities
+- **[Call Center Dashboard](https://github.com/rupsa723/call-center-dashboard)** `Power BI` — performance metrics
 
 ---
-
-### 🛒 RFM Customer Segmentation — Who Are Your Best Customers?
-`Python` `pandas` `Power BI` `Retail CRM`
-
-A grocery retail chain had 2.5 million transactions and zero customer intelligence.
-Everyone received the same campaigns, the same coupons, the same treatment.
-
-I built an end-to-end RFM segmentation pipeline on Dunnhumby's Complete Journey dataset
-to answer: **who's worth keeping, who's already gone, and are we spending money
-on customers who'd buy regardless?**
-
-What surprised me most:
-
-- **Champions are 20.4% of customers but drive 45.4% of revenue** — and the business has no record of who they are
-- **Champions spend less per trip ($29.22) than One-time Buyers ($36.56)** — but Champions made 246 trips. Frequency is the real driver, not basket size
-- **42.6% of households show churn signals** — At Risk and Lost segments combined
-- **Champions absorb 60% of coupon value** despite buying without any incentive — the spend is going to exactly the wrong people
-
-2,595,732 transactions · 8 customer segments · demographic + campaign overlay · 4-page Power BI dashboard
-
-🔗 **[View Project →](https://github.com/rupsa723/Dunnhumby-RFM-segmentation)**
-
----
-
-## 📁 Other Projects
-
----
-
-### 🛍️ Retail Sales Analysis
-`Python` `Power BI`
-
-Customer behaviour, transaction trends, campaign effectiveness, and customer segmentation
-across retail transaction data.
-
-🔗 **[View Project →](https://github.com/rupsa723/RetailSales-Analysis)**
-
----
-
-### 🌐 Website Performance Analysis
-`Power BI`
-
-Analysis and strategic improvement plan for an e-commerce website — identifying
-performance gaps and recommending changes to drive better outcomes.
-
-🔗 **[View Project →](https://github.com/rupsa723/Website-Analysis)**
-
----
-
-### 📉 Customer Churn Analysis
-`Power BI`
-
-Power BI dashboard identifying churn patterns with a presentation outlining
-findings and retention strategies.
-
-🔗 **[View Project →](https://github.com/rupsa723/Customer-Churn-Analysis)**
-
----
-
-### 🏧 ATM Transaction Analysis
-`Power BI`
-
-Dashboard analysing ATM usage patterns, customer behaviour, and opportunities
-for service improvement.
-
-🔗 **[View Project →](https://github.com/rupsa723/ATM-Transaction-Analysis)**
-
----
-
-### 🍟 Retail Analytics — Chip Category
-`Python` `Jupyter`
-
-Customer buying habits in the chip category using transaction and behaviour data
-to surface insights for strategic decision-making.
-
-🔗 **[View Project →](https://github.com/rupsa723/Retail-Analytics)**
-
----
-
-### 📞 Call Center Dashboard
-`Power BI`
-
-Call center performance metrics dashboard.
-
-🔗 **[View Project →](https://github.com/rupsa723/call-center-dashboard)**
-
 
 ## 🤝 Let's Connect
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/rupsa-chaudhuri/)
-- 📧 rupsachaudhuri9@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/rupsa-chaudhuri/) · 📧 rupsachaudhuri9@gmail.com
